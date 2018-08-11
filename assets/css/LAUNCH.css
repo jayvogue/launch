@@ -1,0 +1,214 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+h1,h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+h3,h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+/* Top Alert */
+.alert-primary {
+    background-color: #9acdfe;
+    border-radius: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+/* Top Navigation */
+.navbar {
+    background-color: #1f2d3b;
+    color: #fff;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar-brand {
+    width: 200px;
+    background-color: #edce27;
+    padding: 10px 20px;
+}
+
+.navbar-brand img {
+    max-width: 100%;
+
+}
+.navbar-collapse {
+    padding-right: 20px;
+}
+
+
+.navbar-light .navbar-nav .active>.nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    /* color: #9acdfe; */
+    color: #fff;
+    text-decoration: underline;
+   /* border-bottom: 1px solid #fff; */
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    font-weight: 600;
+}
+
+
+
+/* Home Hero Jumbotron */
+#home-hero {
+    position: relative;
+    background: url(../img/skydive1.jpg) fixed center;
+    background-size: cover;
+    border-bottom: 15px solid #349bfc;
+    margin-bottom: 0;
+   
+}
+.home-hero-content {
+    left: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+}
+.home-hero-content h1 {
+    color: #264a6e;
+    font-size: 6em;
+}
+.home-hero-content h3 {
+    color: #fff;
+    font-weight: 300;
+}
+
+/*  operation section */
+#operation {
+    border-top: 15px solid #9acdfe;
+    border-bottom: 30px solid #1f2d3b;
+    margin-top:0;
+}
+.slug {
+    margin: 10px auto;
+    text-align: center;
+}
+.slug h4 {
+    font-weight: 500;
+}
+#operation .slug0 h4{
+    background-color: #1f2d3b;
+    margin-bottom: 0;
+}
+#operation .slug1 h4 {
+    padding-top: 0;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #1f2d3b;
+    margin-left: 8%;
+    margin-top: -1px;
+}
+#operation h4 {
+    color: #fff;
+    display: inline-block;
+}
+.step-wrap {}
+.step-left {
+    width: 55%;
+    float:left;
+    height: 300px;
+    background-color: red;
+}
+.step-right {
+    width: 55%;
+    float: right;
+    background-color: green;
+    margin-top: -18%;
+    height: 300px;
+}
+
+/* media queries */
+/* small screens */
+@media only screen and (max-width: 40em) { 
+    .navbar-brand {
+        width: 100%;
+        margin: 0;
+    }
+    .navbar-dark .navbar-toggler {
+        margin: 10px auto;
+    }
+    .navbar-collapse {
+        padding-right: 0;
+    }
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: #fff;
+        text-decoration: none;
+      
+    }
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
+    #home-hero {
+        background: url(../img/skydive1.jpg) no-repeat center;
+        height: 400px;
+    }
+    .home-hero-content h1 {
+        color: #264a6e;
+        font-size: 4em;
+    }
+} /* max-width 640px, mobile-only styles */
+
+/* Medium screens */
+@media only screen and (min-width: 40.063em) { 
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: #fff;
+        text-decoration: none;
+      
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
+ }/* min-width 641px, medium screens */
+
+@media only screen and (min-width: 64.063em) {
+    .navbar-nav {
+        width: auto !important;
+        margin-left: auto !important;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    
+    .last-nav-link {
+        padding-right: .5rem !important;
+    }
+    #home-hero {
+        height: calc(100vh - 200px)
+    }
+}
+
+
