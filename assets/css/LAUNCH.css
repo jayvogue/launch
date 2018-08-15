@@ -2,6 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 h1,h2 {
@@ -12,7 +13,20 @@ h3,h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
-
+button, .btn {
+    width: 100px;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 2px solid #edce27;
+    color: #1f2d3b;
+} 
+button:hover, .btn:hover {
+    width: 100px;
+    text-transform: capitalize;
+    background-color: #edce27;
+    border: 2px solid #edce27;
+    color: #1f2d3b;
+} 
 /* Top Alert */
 .alert-primary {
     background-color: #9acdfe;
@@ -124,19 +138,142 @@ h3,h4 {
     color: #fff;
     display: inline-block;
 }
-.step-wrap {}
+.step-wrap {
+    display: block;
+    margin-bottom: 3%;
+}
+
 .step-left {
     width: 55%;
     float:left;
-    height: 300px;
-    background-color: red;
+    height: 250px;
+    background-color: #f51837;
+    position: relative;
+    z-index: 0;
+}
+.step-left div:nth-child(1) {
+    position: absolute;
+    padding-left: 32%;
+    bottom: 0;
+}
+.step-left h2 {
+    color: #730404;
+    font-size: 4em;
+    text-transform: uppercase;
 }
 .step-right {
+    position: relative;
+    z-index: 10;
     width: 55%;
     float: right;
-    background-color: green;
+    /* background-color: green; */
     margin-top: -18%;
-    height: 300px;
+    height: 250px;
+    background: url(../img/IBM-guy.png) no-repeat center top;
+    background-size: 1000px 300px;
+
+}
+.figure {
+    height: 165px;
+}
+/* process */
+#process .skew-wrap {
+    background-color: #f8d933;
+}
+#process .left-skew {
+    padding: 0 !important;
+    height: 250px;
+}
+#process .left-skew div:nth-child(1) {
+    height: 100%;
+    width: 100%;
+    transform: skew(-22deg, 0);
+    background-color: #f8d933;
+    position: relative;
+    z-index: 10;
+    padding-left: 30%;
+    padding-top: 10%;
+}
+
+#process .left-skew h2 {
+    font-size: 4em;
+    text-transform: uppercase;
+    transform: skew(22deg, 0);
+    color: #1c0897;
+}
+
+#process .right-skew {
+    padding: 0;
+    height: 250px;
+    transform: skew(-22deg, 0);
+}
+#process .right-skew img {
+    width: 113%;
+    height: 100%;
+    transform: skew(22deg, 0);
+    margin-left: -10%;
+}
+
+/* about */
+#about .skew-wrap {
+    background-color: #f8d933;
+}
+
+#about .left-skew {
+    padding: 0;
+    height: 250px;
+    transform: skew(-22deg, 0);
+}
+#about .left-skew img {
+    width: 113%;
+    height: 100%;
+    transform: skew(22deg, 0);
+    margin-left: -2%;
+}
+
+#about .right-skew {
+    padding: 0 !important;
+    height: 250px;
+}
+#about .right-skew div:nth-child(1) {
+    height: 100%;
+    width: 100%;
+    transform: skew(-22deg, 0);
+    background-color: #f8d933;
+    position: relative;
+    z-index: 10;
+    padding-left: 10%;
+    padding-top: 0;
+}
+#about .right-skew h2 {
+    font-size: 4em;
+    text-transform: uppercase;
+    transform: skew(22deg, 0);
+    color: #1c0897;
+}
+
+#about .left-skew h2 {
+    font-size: 4em;
+    text-transform: uppercase;
+    transform: skew(22deg, 0);
+    color: #1c0897;
+}
+
+/* footer */
+footer {
+    border-top: 30px solid #1f2d3b;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+footer h2 {
+    text-transform: uppercase;
+    font-size: 3em;
+}
+.footer-logo {
+    height: 150px;
+}
+#social-links a img {
+    height: 30px;
 }
 
 /* media queries */
@@ -207,7 +344,7 @@ h3,h4 {
         padding-right: .5rem !important;
     }
     #home-hero {
-        height: calc(100vh - 200px)
+        height: calc(100vh - 100px)
     }
 }
 

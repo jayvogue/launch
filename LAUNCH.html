@@ -15,44 +15,46 @@
 </head>
   <body>
       <!-- all html goes below here -->
-    <div class="alert alert-primary  alert-dismissible fade show" role="alert">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-      <strong>Contact Us: </strong>
-      <a href="tel:1-555-555-5555"><strong><i class="fas fa-mobile-alt"></i> 555-555-5555 </strong></a>
-
-      <a href="mailto:mail@mail.com"><strong><i class="fas fa-envelope-open"></i> mail@mail.com </strong></a>
-
-    </div>
-    <!-- update nav for mobile to be Off-Canvas Menu vs dropdown  -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow">
-        <a class="navbar-brand" href="/"><img src="./assets/img/launch-logo-2.png" alt="LAUNCH"/></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId">
-                <span class="navbar-toggler-icon"></span>
+    <div class="position-fixed" style="z-index:9999;width: 100%;">
+        <div class="alert alert-primary  alert-dismissible fade show" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
         </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <!-- <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li> -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#operation">What We Do</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="#process">Our Process</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#about">Who We Are</a>
-                    </li>
-                <li class="nav-item">
-                    <a class="nav-link last-nav-link" href="#footer">Contact</a>
-                </li>
-            </ul>
-           
+        <strong>Contact Us: </strong>
+        <a href="tel:1-555-555-5555"><strong><i class="fas fa-mobile-alt"></i> 555-555-5555 </strong></a>
+
+        <a href="mailto:mail@mail.com"><strong><i class="fas fa-envelope-open"></i> mail@mail.com </strong></a>
+
         </div>
-    </nav>
+        <!-- update nav for mobile to be Off-Canvas Menu vs dropdown  -->
+        <nav class="navbar navbar-expand-lg navbar-dark shadow">
+            <a class="navbar-brand" href="/"><img src="./assets/img/launch-logo-2.png" alt="LAUNCH"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <!-- <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#operation">What We Do</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#process">Our Process</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#about">Who We Are</a>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link last-nav-link" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            
+            </div>
+        </nav>
+        </div>
     <!-- hero with image and txt  -->
     <div class="jumbotron jumbotron-fluid" id="home-hero" align="center">
         <div class="container home-hero-content clearfix">
@@ -61,6 +63,7 @@
         </div>
     </div>
     <section id="operation">
+        <div class="container">
         <div class="row">
             <div class="col-12 slug"> 
                 <div class="slug0">   
@@ -71,147 +74,170 @@
                 </div>
             </div>
         </div>
-        <div class="step-wrap">
+        <div class="step-wrap clearfix">
             <!-- overlap on md lg -->
-            <div class="step-left">WHAT WE DO:</div>
-            <div class="step-right">IMG</div>
+            <div class="step-left">
+                <div>
+                    <h2>WHAT</h2><h2>WE DO:</h2>
+                </div>
+            </div>
+            <div class="step-right"></div>
             <!-- <div class="col-lg-7 col-md-7 col-sm-12"><h2>what we do:</h2></div>
             <div class="col-lg-7 col-md-7 col-sm-12">img</div> -->
         </div>
+  
         <div class="row" style="clear:both;">
             <div class="col-12">
-                <div class="container">
                     <div><p>Here is a systemic overview of cycles and services that are  necessary for taking your idea to market. Click on the icons
                             individually for granular analysis, or, click here for the big picture
                             </p></div>
-                    <button type="button" class="btn btn-primary btn-sm self-align-center">click</button>
+                   <div align="center"> <button type="button" class="btn btn-primary btn-sm self-align-center">click</button></div>
                 </div>
-            </div>
+                
+            
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="container" align="center">
+                <div align="center">
                     <div>
                         <figure class="figure">
-                            <img src="http://via.placeholder.com/75x75" class="figure-img img-fluid rounded" alt="">
+                            <img src="./assets/img/advisory-web-icon.png" class="figure-img img-fluid rounded" alt="">
                             <!-- <figcaption class="figure-caption text-xs-right"></figcaption> -->
                         </figure>
                         <figure class="figure">
-                            <img src="http://via.placeholder.com/75x75" class="figure-img img-fluid rounded" alt="">
+                            <img src="./assets/img/operations-icon.png" class="figure-img img-fluid rounded" alt="">
                             <!-- <figcaption class="figure-caption text-xs-right"></figcaption> -->
                         </figure>
                         <figure class="figure">
-                            <img src="http://via.placeholder.com/75x75" class="figure-img img-fluid rounded" alt="">
+                            <img src="./assets/img/dev-icon.png" class="figure-img img-fluid rounded" alt="">
                             <!-- <figcaption class="figure-caption text-xs-right"></figcaption> -->
                         </figure>
                         <figure class="figure">
-                            <img src="http://via.placeholder.com/75x75" class="figure-img img-fluid rounded" alt="">
+                            <img src="./assets/img/security-icon.png" class="figure-img img-fluid rounded" alt="">
                             <!-- <figcaption class="figure-caption text-xs-right"></figcaption> -->
                         </figure>
-                        <figure class="figure">
-                            <img src="http://via.placeholder.com/75x75" class="figure-img img-fluid rounded" alt="">
-                            <!-- <figcaption class="figure-caption text-xs-right"></figcaption> -->
+                       
                         </figure>
                     </div>
                     <div>
+                        <figure class="figure">
+                            <img src="./assets/img/compliance-icon.png" class="figure-img img-fluid rounded" alt="">
+                            <!-- <figcaption class="figure-caption text-xs-right"></figcaption> -->
+                            </figure>
                             <figure class="figure">
-                                <img src="http://via.placeholder.com/75x75" class="figure-img img-fluid rounded" alt="">
+                                <img src="./assets/img/infrastructure-icon.png" class="figure-img img-fluid rounded" alt="">
                                 <!-- <figcaption class="figure-caption text-xs-right"></figcaption> -->
                             </figure>
                             <figure class="figure">
-                                <img src="http://via.placeholder.com/75x75" class="figure-img img-fluid rounded" alt="">
+                                <img src="./assets/img/cloud-web-icon.png" class="figure-img img-fluid rounded" alt="">
                                 <!-- <figcaption class="figure-caption text-xs-right"></figcaption> -->
                             </figure>
                             <figure class="figure">
-                                <img src="http://via.placeholder.com/75x75" class="figure-img img-fluid rounded" alt="">
+                                <img src="./assets/img/analytics-web-icon.png" class="figure-img img-fluid rounded" alt="">
                                 <!-- <figcaption class="figure-caption text-xs-right"></figcaption> -->
                             </figure>
-                            <figure class="figure">
-                                <img src="http://via.placeholder.com/75x75" class="figure-img img-fluid rounded" alt="">
-                                <!-- <figcaption class="figure-caption text-xs-right"></figcaption> -->
-                            </figure>
-                            <figure class="figure">
-                                <img src="http://via.placeholder.com/75x75" class="figure-img img-fluid rounded" alt="">
-                                <!-- <figcaption class="figure-caption text-xs-right"></figcaption> -->
+                           
                             </figure>
                         </div>
                         <div>
                             <figure class="figure">
-                                <img src="http://via.placeholder.com/75x75" class="figure-img img-fluid rounded" alt="">
+                                <img src="./assets/img/networking-icon.png" class="figure-img img-fluid rounded" alt="">
                                 <!-- <figcaption class="figure-caption text-xs-right"></figcaption> -->
                             </figure>
                             <figure class="figure">
-                                <img src="http://via.placeholder.com/75x75" class="figure-img img-fluid rounded" alt="">
-                                <!-- <figcaption class="figure-caption text-xs-right"></figcaption> -->
-                            </figure>
-                            <figure class="figure">
-                                <img src="http://via.placeholder.com/75x75" class="figure-img img-fluid rounded" alt="">
-                                <!-- <figcaption class="figure-caption text-xs-right"></figcaption> -->
-                            </figure>
-                            <figure class="figure">
-                                <img src="http://via.placeholder.com/75x75" class="figure-img img-fluid rounded" alt="">
-                                <!-- <figcaption class="figure-caption text-xs-right"></figcaption> -->
-                            </figure>
-                            <figure class="figure">
-                                <img src="http://via.placeholder.com/75x75" class="figure-img img-fluid rounded" alt="">
+                                <img src="./assets/img/IA-icon.png" class="figure-img img-fluid rounded" alt="">
                                 <!-- <figcaption class="figure-caption text-xs-right"></figcaption> -->
                             </figure>
                         </div>
                 </div>  
             </div>
         </div>
+        </div>
     </section>
     <section id="process">
-        <div class="row">
+        <div class="row skew-wrap">
             <!-- skew divs on md lg -->
-            <div class="col-lg-6 col-sm-12">txt</div>
-            <div class="col-lg-6 col-sm-12">img</div>
+            <div class="col-lg-6 col-sm-12 left-skew">
+                <div>
+                   <h2>Launch</h2><h2 style="margin-left: 34px;">Process</h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 right-skew">
+                <img src="./assets/img/maxresdefault.jpg" alt="aries rocket" />
+            </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="container">
-                    <div>txt</div>
-                    <div>overlay with <button type="button" class="btn btn-primary">click</button></div>
+                <div class="container" style="margin: 4% auto;">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptate! Minus possimus, explicabo eveniet quae eligendi ipsa error repudiandae nulla aliquid dolorum optio dolorem reprehenderit praesentium impedit laboriosam incidunt et!</div>
+                    <div align="center"><button type="button" class="btn btn-primary">click</button></div>
                 </div>
             </div>
         </div>
     </section>
     <section id="about">
-        <div class="row">
-                <!-- skew divs on md lg -->
-                <div class="col-lg-6 col-sm-12">txt</div>
-                <div class="col-lg-6 col-sm-12">img</div>
+        <div class="row skew-wrap">
+        <!-- skew divs on md lg -->
+            <div class="col-lg-6 col-sm-12 left-skew">
+                <img src="./assets/img/dale-emily-pix.png" alt="aries rocket" />
             </div>
+            <div class="col-lg-6 col-sm-12 right-skew">
+                <div>
+                    <h2>Who</h2>
+                    <h2 style="margin-left: 34px;">we</h2>
+                    <h2 style="margin-left: 68px;">are</h2>
+                </div>
+            </div>
+        </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="container">
-                        <div>txt</div>
-                        <div>overlay with <button type="button" class="btn btn-primary">click</button></div>
+                    <div class="container" style="margin: 4% auto;">
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptate! Minus possimus, explicabo eveniet quae eligendi ipsa error repudiandae nulla aliquid dolorum optio dolorem reprehenderit praesentium impedit laboriosam incidunt et!</div>
+                        <div align="center"><button type="button" class="btn btn-primary">click</button></div>
                     </div>
                 </div>
             </div>
     </section>
+
     <footer id="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-12">txt</div>
+            <div class="row" align="center">
+                <div class="col-12"><h2>Launch</h2></div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-sm-12">txt</div>
-                <div class="col-lg-4 col-sm-12">img</div>
-                <div class="col-lg-4 col-sm-12">icons</div>
+            <div class="row" align="center" style="margin-bottom:5%">
+                <div class="col-lg-4 col-sm-12" style="padding-top:3%">
+                    <p>Sign up to receive launch updates.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="your@email.com" aria-label="email" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">Submit</button>
+                        </div>
+                    </div>
+                              
+                </div>
+                <div class="col-lg-4 col-sm-12"><img class="footer-logo" src="./assets/img/rocket.png" alt="launch rocket"></div>
+                <div class="col-lg-4 col-sm-12" style="padding-top:8%">
+                    <nav id="social-links">
+                        <a><img src="./assets/img/facebook.png" alt="facebook"></a>
+                        <a><img src="./assets/img/youtube.png" alt="youtube"></a>
+                        <a><img src="./assets/img/twitter.png" alt="twitter"></a>
+                        <a><img src="./assets/img/rss.png" alt="rss"></a>
+                        <a><img src="./assets/img/linkedin.png" alt="linkedin"></a>
+                        <a><img src="./assets/img/gplus.png" alt="google plus"></a>
+                    </nav>
+                 </div>
             </div>
-            <div class="row">
+            <div class="row" align="center" style="margin-bottom: 2%">
                 <div class="col-12">
                     <nav>
-                        <a>link</a>
-                        <a>link</a>
-                        <a>link</a>
+                        <a>terms of use | </a>
+                        <a>privacy statement | </a>
+                        <a>code of ethics</a>
                     </nav>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">txt</div>
+            <div class="row" align="center">
+                <div class="col-12">&copy; 2018 Launch | All Rights Reserved</div>
             </div>
         </div>
     </footer>
